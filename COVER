@@ -1,20 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <div class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?technology,abstract');">
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-      <div class="text-center text-white px-6">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di Website Kami</h1>
-        <p class="text-lg md:text-2xl mb-6">Solusi Digital untuk Masa Depan Anda</p>
-        <a href="#about" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg transition">Jelajahi Lebih Lanjut</a>
+"use client";
+import * as React from "react";
+
+/**
+ * Slide1 Component
+ *
+ * A slide component displaying a background image with "Sample Management" text and an icon.
+ */
+const Slide1: React.FC = () => {
+  return (
+    <section className="overflow-hidden mx-auto w-full text-base text-center text-white bg-white max-w-[480px]">
+      <div className="flex relative flex-col items-start pr-20 pb-40 pl-5 w-full min-h-[956px] pt-[668px]">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec6d425c4771c0e415fb2dd704fec6ebe290eac7?placeholderIfAbsent=true&apiKey=0d52c9eba5a844d19b1e863cc88b3922"
+          alt="Background image"
+          className="object-cover absolute inset-0 size-full"
+        />
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc72a58574eec03071815690707a9dd92376441a?placeholderIfAbsent=true&apiKey=0d52c9eba5a844d19b1e863cc88b3922"
+          alt="Sample management icon"
+          className="object-contain ml-3 rounded-xl aspect-square w-[71px]"
+        />
+        <h2 className="relative mb-0">
+          Sample <br />
+          Management
+        </h2>
       </div>
-    </div>
-  </div>
-</body>
-</html>
+    </section>
+  );
+};
+
+export default Slide1;
+
